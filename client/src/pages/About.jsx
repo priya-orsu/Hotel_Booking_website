@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-red-900 to-red-800 text-white py-24 px-6">
+      <div className="relative bg-linear-to-r from-red-900 to-red-800 text-white py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">About Our Hotel</h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-200">
@@ -27,7 +27,7 @@ const About = () => {
           <img
             src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop"
             alt="Hotel"
-            className="rounded-3xl shadow-2xl w-full h-[450px] object-cover"
+            className="rounded-3xl shadow-2xl w-full 'h-[450px]' object-cover"
           />
         </div>
 

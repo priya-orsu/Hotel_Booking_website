@@ -58,12 +58,12 @@ const Navbar = () => {
   }, [isUserDropdownOpen]);
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-gradient-to-r from-red-700 to-red-900">
+    <nav className="fixed w-full top-0 z-50 bg-linear-to-r from-red-700 to-red-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo and mobile menu button */}
           <div className="flex items-center">
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <span className="text-xl font-bold text-white">VS Hotels</span>
             </div>
           </div>

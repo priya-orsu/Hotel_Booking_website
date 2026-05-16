@@ -79,7 +79,7 @@ const Profile = () => {
     <div className="min-h-screen bg-gray-100 flex justify-center items-center px-4 py-10 pt-20">
       <div className="w-full max-w-lg bg-white rounded-3xl shadow-2xl overflow-hidden">
         {/* Header */}
-        <div className="bg-gradient-to-r from-red-600 to-red-800 h-36 relative">
+        <div className="bg-linear-to-r from-red-600 to-red-800 h-36 relative">
           {/* Profile Avatar */}
           <div className="absolute left-1/2 transform -translate-x-1/2 top-16">
             <div className="w-28 h-28 rounded-full bg-white shadow-lg border-4 border-white flex justify-center items-center">

@@ -13,4 +13,4 @@ connection.on('connected' , ()=>{
     console.log('MongoDB connection successful')
 })
 
-module.export = mongoose
+module.exports = mongoose

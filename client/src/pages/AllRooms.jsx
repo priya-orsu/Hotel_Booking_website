@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import Room from '../component/Room';
-import {FaSpinner} from 'react-icons/fa'
+import { useState, useEffect } from "react";
+import axios from "axios";
+import Room from "../component/Room";
+import { FaSpinner } from "react-icons/fa";
 
 const AllRooms = () => {
   const [rooms, setRooms] = useState([]);
@@ -9,27 +9,37 @@ const AllRooms = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    const fetchRooms = async () => {
-      try {
-        const response = await axios.get('https://hotel-booking-backend.onrender.com/api/rooms/getallrooms', {
-          withCredentials: true
-        });
-        setRooms(response.data);
-        setLoading(false);
-      } catch (err) {
-        setError(true);
-        setLoading(false);
-      }
-    };
     fetchRooms();
   }, []);
 
-  if (loading) return (
-    <div className="flex justify-center items-center h-screen">
-      <FaSpinner className="animate-spin text-red-600 text-4xl mr-3" />
-      <span className="text-xl">Loading room details...</span>
-    </div>
-  );
+  const fetchRooms = async () => {
+    try {
+      setLoading(true);
+
+      console.log("Calling API...");
+
+      const response = await axios.get(
+        `${import.meta.env.VITE_API_URL}/api/rooms/getallrooms`,
+      );
+
+      console.log("Success:", response.data);
+
+      setRooms(response.data);
+    } catch (error) {
+      console.log("Error:", error);
+    } finally {
+      console.log("Finished request");
+      setLoading(false);
+    }
+  };
+
+  if (loading)
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <FaSpinner className="animate-spin text-red-600 text-4xl mr-3" />
+        <span className="text-xl">Loading room details...</span>
+      </div>
+    );
 
   return (
     <div className="container mt-4">

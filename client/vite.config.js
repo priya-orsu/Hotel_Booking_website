@@ -8,7 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: "/Hotel_Booking_website/",
   server: {
     proxy: {
       '/api': {

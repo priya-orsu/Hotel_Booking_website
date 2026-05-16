@@ -43,7 +43,7 @@ const MyBookings = () => {
       );
 
       const BASE_URL =
-        "http://hotel-booking-backend.onrender.com";
+        "https://hotel-booking-backend.onrender.com";
 
       const endpoint =
         isAdminView && currentUser.isAdmin
@@ -236,7 +236,7 @@ const BookingCard = ({
     try {
 
       const response = await fetch(
-        `http://localhost:5001/api/bookings/${booking._id}/cancel`,
+        `https://hotel-booking-backend.onrender.com/api/bookings/${booking._id}/cancel`,
         {
           method: "PATCH",
 

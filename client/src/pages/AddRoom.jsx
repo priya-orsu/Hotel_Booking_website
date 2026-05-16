@@ -40,7 +40,7 @@ const AddRoom = () => {
       };
 
       const response = await axios.post(
-        "http://hotel-booking-backend.onrender.com/api/admin/addroom",
+        "https://hotel-booking-backend.onrender.com/api/admin/addroom",
         roomData,
         {
           headers: {

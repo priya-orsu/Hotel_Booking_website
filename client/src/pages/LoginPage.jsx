@@ -16,7 +16,7 @@ const LoginPage = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:5001/api/users/login", {
+      const response = await axios.post("http://hotel-booking-backend.onrender.com/api/users/login", {
         email,
         password,
       });

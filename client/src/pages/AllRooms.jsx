@@ -11,7 +11,7 @@ const AllRooms = () => {
   useEffect(() => {
     const fetchRooms = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/api/rooms/getallrooms', {
+        const response = await axios.get('http://hotel-booking-backend.onrender.com/api/rooms/getallrooms', {
           withCredentials: true
         });
         setRooms(response.data);

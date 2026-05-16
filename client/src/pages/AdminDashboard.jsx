@@ -30,19 +30,19 @@ const AdminDashboard = () => {
 
       // USERS
       const usersRes = await axios.get(
-        "http://localhost:5001/api/admin/users",
+        "http://hotel-booking-backend.onrender.com/api/admin/users",
         { headers }
       );
 
       // ROOMS
       const roomsRes = await axios.get(
-        "http://localhost:5001/api/admin/rooms",
+        "http://hotel-booking-backend.onrender.com/api/admin/rooms",
         { headers }
       );
 
       // BOOKINGS
       const bookingsRes = await axios.get(
-        "http://localhost:5001/api/admin/bookings",
+        "http://hotel-booking-backend.onrender.com/api/admin/bookings",
         { headers }
       );
 
@@ -74,7 +74,7 @@ const AdminDashboard = () => {
     try {
 
       await axios.delete(
-        `http://localhost:5001/api/admin/delete-room/${id}`,
+        `http://hotel-booking-backend.onrender.com/api/admin/delete-room/${id}`,
         { headers }
       );
 
@@ -102,7 +102,7 @@ const AdminDashboard = () => {
     try {
 
       await axios.delete(
-        `http://localhost:5001/api/admin/delete-user/${id}`,
+        `http://hotel-booking-backend.onrender.com/api/admin/delete-user/${id}`,
         { headers }
       );
 
@@ -130,7 +130,7 @@ const AdminDashboard = () => {
     try {
 
       await axios.delete(
-        `http://localhost:5001/api/admin/delete-booking/${id}`,
+        `http://hotel-booking-backend.onrender.com/api/admin/delete-booking/${id}`,
         { headers }
       );
 

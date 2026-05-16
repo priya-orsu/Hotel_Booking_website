@@ -43,7 +43,7 @@ const MyBookings = () => {
       );
 
       const BASE_URL =
-        "http://localhost:5001";
+        "http://hotel-booking-backend.onrender.com";
 
       const endpoint =
         isAdminView && currentUser.isAdmin

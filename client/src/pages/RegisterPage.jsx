@@ -27,7 +27,7 @@ const RegisterPage = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:5001/api/users/register', {
+      const res = await axios.post('http://hotel-booking-backend.onrender.com/api/users/register', {
         name: formData.name,
         email: formData.email,
         password: formData.password

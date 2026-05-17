@@ -30,7 +30,7 @@ export default function BookingDetails() {
     const fetchRoom = async () => {
       try {
         const response = await axios.post(
-          "https://hotel-booking-backend.onrender.com/api/rooms/getroombyid",
+          "https://hotel-booking-website-szw4.onrender.com/api/rooms/getroombyid",
           { roomid },
         );
         setRoom(response.data);
@@ -103,7 +103,7 @@ export default function BookingDetails() {
       setSubmitting(true);
 
       const response = await axios.post(
-        "https://hotel-booking-backend.onrender.com/api/bookings/create",
+        "https://hotel-booking-website-szw4.onrender.com/api/bookings/create",
         bookingData,
         {
           headers: { "Content-Type": "application/json" },

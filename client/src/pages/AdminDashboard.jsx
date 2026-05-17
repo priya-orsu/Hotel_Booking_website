@@ -30,19 +30,19 @@ const AdminDashboard = () => {
 
       // USERS
       const usersRes = await axios.get(
-        "https://hotel-booking-backend.onrender.com/api/admin/users",
+        "https://hotel-booking-website-szw4.onrender.com/api/admin/users",
         { headers }
       );
 
       // ROOMS
       const roomsRes = await axios.get(
-        "https://hotel-booking-backend.onrender.com/api/admin/rooms",
+        "https://hotel-booking-website-szw4.onrender.com/api/admin/rooms",
         { headers }
       );
 
       // BOOKINGS
       const bookingsRes = await axios.get(
-        "https://hotel-booking-backend.onrender.com/api/admin/bookings",
+        "https://hotel-booking-website-szw4.onrender.com/api/admin/bookings",
         { headers }
       );
 
@@ -74,7 +74,7 @@ const AdminDashboard = () => {
     try {
 
       await axios.delete(
-        `https://hotel-booking-backend.onrender.com/api/admin/delete-room/${id}`,
+        `https://hotel-booking-website-szw4.onrender.com/api/admin/delete-room/${id}`,
         { headers }
       );
 
@@ -102,7 +102,7 @@ const AdminDashboard = () => {
     try {
 
       await axios.delete(
-        `https://hotel-booking-backend.onrender.com/api/admin/delete-user/${id}`,
+        `https://hotel-booking-website-szw4.onrender.com/api/admin/delete-user/${id}`,
         { headers }
       );
 
@@ -130,7 +130,7 @@ const AdminDashboard = () => {
     try {
 
       await axios.delete(
-        `https://hotel-booking-backend.onrender.com/api/admin/delete-booking/${id}`,
+        `https://hotel-booking-website-szw4.onrender.com/api/admin/delete-booking/${id}`,
         { headers }
       );
 

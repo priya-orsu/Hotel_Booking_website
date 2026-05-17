@@ -20,7 +20,7 @@ const AllRooms = () => {
       console.log("Calling API...");
 
       const response = await axios.get(
-        "http://localhost:5001/api/rooms/getallrooms"
+        "http://hotel-booking-website-szw4.onrender.com/api/rooms/getallrooms"
       );
 
       console.log("Success:", response.data);

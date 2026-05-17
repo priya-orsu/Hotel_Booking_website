@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors({
   origin: [
-    "https://vshotelbooking.netlify.app",
+    "https://vshotelbookingwebsite.netlify.app",
     "http://localhost:5173"
   ],
   credentials: true

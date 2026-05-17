@@ -19,7 +19,7 @@ const AllRooms = () => {
       console.log("Calling API...");
 
       const response = await axios.get(
-        `${import.meta.env.VITE_API_URL}/api/rooms/getallrooms`,
+        "http://localhost:5001/api/rooms/getallrooms",
       );
 
       console.log("Success:", response.data);
